@@ -146,9 +146,11 @@ class RegisterViewController: UIViewController {
                         }
                         
                         DatabaseManager.shared.insertUser(with: DatabaseManager.ChattyUser(nickname: nickname!, emailAddress: email!, profilePictureUrl: "temp", uid: (authData?.user.uid)!))
+                        StorageManager.shared.uploadImage(img: self.imageView.image!, filePath: "userProfile/\(authData!.user.uid)")
                         
                         let alert = UIAlertController(title: "Succeed to register", message: "Welcome, \(nickname!)", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Go to login", style: .default, handler: { action in
+                            
                             //temp => sign out
                             let firebaseAuth = Auth.auth()
                             do {
@@ -156,6 +158,7 @@ class RegisterViewController: UIViewController {
                             } catch let signOutError as NSError {
                                 print("Error signing out: %@", signOutError)
                             }
+                            
                             self.navigationController?.dismiss(animated: true, completion: nil)
                         }))
                         

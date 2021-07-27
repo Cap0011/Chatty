@@ -108,8 +108,10 @@ class LoginViewController: UIViewController {
                     return
                 }
                 DatabaseManager.shared.getUserData(with: authData?.user.uid ?? "", for: "nickname") { name in
+                    StorageManager.shared.downloadImage(uid: authData!.user.uid, image: self.imageView)
                     let alert = UIAlertController(title: "Succeed to login", message: "Welcome back, \(name)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                        
                         //temp => sign out
                         let firebaseAuth = Auth.auth()
                         do {
@@ -117,10 +119,12 @@ class LoginViewController: UIViewController {
                         } catch let signOutError as NSError {
                             print("Error signing out: %@", signOutError)
                         }
-                        self.navigationController?.dismiss(animated: true, completion: nil)
+                        
+                        //self.navigationController?.dismiss(animated: true, completion: nil)
                     }))
                     
                     self.present(alert, animated: true, completion: nil)
+                    
                 }
             }
         } else{

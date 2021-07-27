@@ -10,6 +10,7 @@
 		DF0C850A26AC0179004E8638 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C850926AC0179004E8638 /* ConversationViewController.swift */; };
 		DF0C850C26ACD040004E8638 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF0C850B26ACD040004E8638 /* GoogleService-Info.plist */; };
 		DF88D7FC26ADD34900C9EA0A /* Pods_Chatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF88D7FB26ADD34900C9EA0A /* Pods_Chatty.framework */; };
+		DFB17BB526AF5C0D00653888 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB17BB426AF5C0D00653888 /* StorageManager.swift */; };
 		DFDC0B6126AB5CFB007B73F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC0B6026AB5CFB007B73F4 /* AppDelegate.swift */; };
 		DFDC0B6326AB5CFB007B73F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC0B6226AB5CFB007B73F4 /* SceneDelegate.swift */; };
 		DFDC0B6826AB5CFB007B73F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDC0B6626AB5CFB007B73F4 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		DF0C850B26ACD040004E8638 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF88D7F526ADD32900C9EA0A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF88D7FB26ADD34900C9EA0A /* Pods_Chatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Chatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB17BB426AF5C0D00653888 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		DFDC0B5D26AB5CFB007B73F4 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDC0B6026AB5CFB007B73F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDC0B6226AB5CFB007B73F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				DFDC0B6226AB5CFB007B73F4 /* SceneDelegate.swift */,
 				DFDC0B8926AB74E1007B73F4 /* Extensions.swift */,
 				DFE40E3326AE099A00E94217 /* DatabaseManager.swift */,
+				DFB17BB426AF5C0D00653888 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				DFDC0B8A26AB74E1007B73F4 /* Extensions.swift in Sources */,
 				DF0C850A26AC0179004E8638 /* ConversationViewController.swift in Sources */,
 				DFDC0B7F26AB5FF0007B73F4 /* PhotoViewerViewController.swift in Sources */,
+				DFB17BB526AF5C0D00653888 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

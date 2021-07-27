@@ -14,7 +14,6 @@ final class DatabaseManager {
     
     private let database = Database.database().reference()
     
-   
     struct ChattyUser {
         let nickname: String
         let emailAddress: String
